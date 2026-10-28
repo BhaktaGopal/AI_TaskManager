@@ -1,0 +1,10 @@
+import redis
+
+# Create Redis connection
+redis_client = redis.Redis(
+    host="localhost",  
+    port=6379,         
+    db=0,              
+    decode_responses=True  
+    # Ensures we get strings instead of bytes
+)
